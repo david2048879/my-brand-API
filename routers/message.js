@@ -1,13 +1,14 @@
 const router = require('express').Router();
 const message = require('../models/message');
+const messageController = require('../controllers/messageController')
 
 //send message
 
-router.post('/', );
+router.post('/', messageController.SendMessage);
 
 
 //get message
-router.get('/', );
+router.get('/', messageController.getMessage);
 
 
 
